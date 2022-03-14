@@ -1,0 +1,140 @@
+/***********************
+    settings panel
+***********************/
+.fonts {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+}
+
+.settingsModalWrapper {
+  position: relative;
+  position: absolute;
+  top: 7.3%;
+  bottom: 5.5%;
+  left: 6.2%;
+  right: 6.2%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.heading {
+  @extend .fonts;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 25px;
+  img {
+    height: 6%;
+    width: 6%;
+  }
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.wrapperSize {
+  min-width: 100%;
+  min-height: 90.5%;
+}
+
+.timeController {
+  @extend .fonts;
+  .subtitle {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: #161932;
+    letter-spacing: 4.5px;
+  }
+}
+
+.changeTimePanel > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  label {
+    font-size: 1rem;
+    opacity: 0.4;
+  }
+  input {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: #eff1fa;
+  }
+}
+
+.arrowIcons {
+  position: relative;
+  .arrowUp {
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    z-index: 10;
+    width: 4%;
+    // margin: 1% 0;
+  }
+}
+
+.changeTimePanel {
+  padding-bottom: 5%;
+  margin: 0 8%;
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.fontChoice {
+  @extend .fonts;
+  @extend .changeTimePanel;
+  font-size: 1.1rem;
+  margin: 6% auto;
+  letter-spacing: 0.3rem;
+}
+.selectFont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 6% 27%;
+}
+
+.fontStyle1 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #161932;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.02rem;
+}
+
+.fontStyle1 > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fontStyle2 {
+  @extend .fontStyle1;
+  background-color: #eff1fa;
+  color: #1e213f;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  opacity: 0.73;
+}
+.fontStyle3 {
+  @extend .fontStyle1;
+  background-color: #eff1fa;
+  color: #1e213f;
+  font-family: "Space Mono";
+  opacity: 0.73;
+}
+
+.colorChoice {
+  @extend .fontChoice;
+  @extend .changeTimePanel;
+  border: none;
+}

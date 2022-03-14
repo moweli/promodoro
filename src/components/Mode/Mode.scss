@@ -1,0 +1,66 @@
+.fonts {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+}
+
+.controls {
+  position: relative;
+  margin: 0 auto;
+  // margin-bottom: 10em;
+  width: calc(327 / $base-rem) * 1rem;
+  height: calc(63 / $base-rem) * 1rem;
+  background-color: $innerCircleColor;
+  border-radius: calc(31.5 / $base-rem) * 1rem;
+  cursor: pointer;
+}
+
+.list {
+  @extend .fonts;
+  list-style-type: none;
+  color: $text-color;
+}
+
+.list > li {
+  width: 105.2px;
+  height: 48px;
+  border-radius: 26.5px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  opacity: 0.4;
+  &:nth-child(1) {
+    position: absolute;
+    justify-content: center;
+    left: 2%;
+    bottom: calc(15 / 2 * 1px);
+    &.active {
+      background-color: $primaryColor;
+      color: $baseColor;
+      opacity: 1;
+    }
+  }
+  &:nth-child(2) {
+    position: absolute;
+    justify-content: center;
+    left: 110.9105px;
+    bottom: calc(15 / 2 * 1px);
+    &.active {
+      background-color: $primaryColor;
+      color: $baseColor;
+      opacity: 1;
+    }
+  }
+  &:nth-child(3) {
+    position: absolute;
+    justify-content: center;
+    right: 2%;
+    bottom: calc(15 / 2 * 1px);
+    &.active {
+      background-color: $primaryColor;
+      color: $baseColor;
+      opacity: 1;
+    }
+  }
+}

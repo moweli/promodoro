@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto+Slab&family=Space+Mono&display=swap");
+
+/***********************
+    main UI elements
+***********************/
+
+.wrapper {
+  background-color: $baseColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fonts {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title {
+  @extend .fonts;
+  // margin-top: 2em;
+  // position: fixed;
+  // top: 5%;
+  // left: calc(50% - 58.5px);
+  // width: calc(117 / $base-rem) * 1rem;
+  // height: calc(24 / $base-rem) * 1rem;
+  font-size: calc(24 / $base-rem) * 1rem;
+  // line-height: calc(30 / $base-rem) * 1rem;
+  color: $text-color;
+}
+
+.settingsIcon {
+  // margin-bottom: 1em;
+  position: fixed;
+  left: calc(50% - 14px);
+  bottom: 5%;
+}
