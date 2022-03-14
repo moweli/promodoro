@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Mode from "./components/Mode/Mode";
 import Timer from "./components/Timer/Timer";
 import useStore from "./store/timerState";
@@ -29,7 +29,6 @@ function App() {
           if (minutes === 0) {
             // when seconds = 0 and minutes = 0
             toggleShortLongBreak();
-            // stopTimerAfterFullCycle();
           } else {
             // when seconds = 0 and minutes are left
             decrementMinute();

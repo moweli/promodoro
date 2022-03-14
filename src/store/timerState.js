@@ -12,7 +12,7 @@ const useStore = create(
     isShortBreak: false,
     isLongBreak: false,
     seconds: 0,
-    minutes: 1,
+    minutes: 25,
     percentage: 100,
     timerState: false,
     promoRound: 0,
