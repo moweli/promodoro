@@ -4,9 +4,9 @@ import { devtools } from "zustand/middleware";
 const useStore = create(
   devtools((set, get) => ({
     promo: {
-      promodoro: 1,
-      shortBreak: 1,
-      longBreak: 1,
+      promodoro: 25,
+      shortBreak: 5,
+      longBreak: 15,
     },
     isBreak: false,
     isShortBreak: false,
